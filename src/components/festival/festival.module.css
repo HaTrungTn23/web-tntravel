@@ -1,0 +1,72 @@
+.page{--festival-red:#ad352e;--festival-red-dark:#8e2925;--festival-red-wash:#fff0ee;overflow:clip;background:var(--paper);color:var(--ink)}
+.hero{position:relative;display:flex;align-items:center;min-height:min(620px,calc(100dvh - 72px));overflow:hidden;background:var(--forest-2);color:#fff}
+.heroImage,.heroShade{position:absolute;inset:0}
+.heroImage img{width:100%;height:100%;object-fit:cover}
+.heroShade{background:linear-gradient(90deg,rgba(5,39,24,.94) 0%,rgba(5,39,24,.67) 48%,rgba(5,39,24,.16) 100%)}
+.heroContent{position:relative;width:min(1220px,100%);margin:auto;padding:72px 32px}
+.heroLabel{display:inline-block;margin-bottom:18px;padding:8px 12px;border-radius:7px;background:var(--festival-red);color:#fff;font-size:12px;font-weight:800;letter-spacing:.04em}
+.hero h1{max-width:790px;margin:0;font-size:clamp(39px,5.3vw,67px);line-height:1.07;letter-spacing:-.045em;text-wrap:balance}
+.hero p{max-width:590px;margin:20px 0 0;color:#eef8f1;font-size:17px;line-height:1.6}
+.heroActions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.heroActions :global(.button-light){border-color:var(--festival-red);background:var(--festival-red);color:#fff}
+.heroActions :global(.button-light:hover){border-color:var(--festival-red-dark);background:var(--festival-red-dark)}
+.heroActions :global(.button-glass:hover){border-color:#fff;background:rgba(255,255,255,.18)}
+.infoStrip{display:flex;align-items:center;justify-content:space-between;gap:18px;width:min(1216px,calc(100% - 64px));margin:0 auto;padding:17px 0;border-bottom:1px solid var(--line);color:var(--forest-2);font-size:14px;font-weight:700}
+.infoStrip span:first-child{display:flex;align-items:center;gap:8px}
+.infoStrip span:first-child{color:var(--festival-red-dark)}
+.section{width:min(1216px,100%);margin:auto;padding:56px 32px;scroll-margin-top:88px}
+.sectionHead{margin-bottom:25px}
+.sectionHead h2{margin:0;color:var(--forest-2);font-size:clamp(32px,3.4vw,46px);line-height:1.12;letter-spacing:-.035em}
+.sectionHead p{max-width:620px;margin:11px 0 0;color:var(--muted);line-height:1.6}
+.datePicker{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:8px;margin-bottom:24px}
+.datePicker button{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:68px;border:1px solid var(--line);border-radius:14px;background:#fff;color:var(--forest-2);cursor:pointer;transition:background .18s ease,transform .18s ease,border-color .18s ease}
+.datePicker button:hover{border-color:var(--festival-red);background:var(--festival-red-wash)}
+.datePicker button:active{transform:scale(.97)}
+.datePicker button:focus-visible,.itemActions a:focus-visible,.placeLinks a:focus-visible,.heroActions a:focus-visible{outline:3px solid var(--festival-red);outline-offset:3px}
+.datePicker button.activeDay{border-color:var(--festival-red);background:var(--festival-red);color:#fff}
+.datePicker button.activeDay:hover{background:var(--festival-red-dark)}
+.datePicker small{font-size:10px}.datePicker b{font-size:24px;line-height:1.2}
+.scheduleLayout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.65fr);gap:20px;align-items:start}
+.scheduleList,.allDays{min-width:0;padding:24px;border:1px solid var(--line);border-radius:17px;background:#fff}
+.scheduleList{border-top:4px solid var(--festival-red)}
+.scheduleList h3,.allDays h3{margin:0 0 16px;color:var(--forest-2);font-size:20px}
+.scheduleItem{display:grid;grid-template-columns:100px minmax(0,1fr);gap:20px;padding:17px 0;border-top:1px solid var(--line)}
+.scheduleItem time{font-weight:800;color:var(--festival-red-dark)}
+.scheduleItem h4,.allDays h4{margin:0;color:var(--ink);font-size:17px;line-height:1.35}
+.scheduleItem p{display:flex;align-items:flex-start;gap:5px;margin:8px 0;color:var(--muted);font-size:13px}
+.scheduleItem p svg{flex:none}
+.itemActions{display:flex;flex-wrap:wrap;gap:18px}
+.itemActions a,.allDays a{display:inline-flex;align-items:center;gap:4px;color:var(--festival-red-dark);font-size:12px;font-weight:750}
+.itemActions a:hover,.allDays a:hover{color:var(--festival-red)}
+.allDays>div{padding:17px 0;border-top:1px solid var(--line)}
+.allDays p{margin:7px 0;color:var(--muted);font-size:13px}
+.scheduleNote{margin:14px 0 0;color:var(--muted);font-size:12px}
+.empty{color:var(--muted)}
+.highlights{background:var(--cream);width:100%;padding-left:max(32px,calc((100% - 1152px)/2));padding-right:max(32px,calc((100% - 1152px)/2))}
+.highlightGrid{display:grid;grid-template-columns:1.15fr 1fr 1fr;gap:18px}
+.highlightGrid article{min-width:0}
+.highlightImage{height:220px;overflow:hidden;border-radius:16px;background:var(--mint)}
+.highlightImage img{width:100%;height:100%;object-fit:cover}
+.highlightGrid h3{margin:17px 0 7px;color:var(--forest-2);font-size:20px}
+.highlightGrid article:first-child .highlightImage{border-bottom:5px solid var(--festival-red)}
+.highlightGrid p{margin:0;color:var(--muted);font-size:14px;line-height:1.6}
+.mapWrap{height:400px;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:var(--mint)}
+.mapWrap :global(.map-shell),.mapWrap :global(.map-viewport),.mapWrap :global(.map-stage),.mapWrap :global(.leaflet-map){height:100%;min-height:0}
+.placeLinks{display:flex;flex-wrap:wrap;gap:9px;margin-top:15px}
+.placeLinks a{display:inline-flex;align-items:center;gap:8px;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--forest-2);font-size:13px;font-weight:700}
+.placeLinks a:hover{background:var(--mint)}
+.trips{padding-top:42px}
+.tripGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.tripGrid a{display:flex;flex-direction:column;min-height:206px;padding:22px;border:1px solid var(--line);border-radius:16px;background:#fff;transition:border-color .2s ease,transform .2s ease}
+.tripGrid a:hover{border-color:var(--forest);transform:translateY(-2px)}
+.tripGrid small{color:var(--festival-red-dark);font-weight:800}.tripGrid h3{margin:10px 0 8px;color:var(--forest-2);font-size:20px}
+.tripGrid p{margin:0 0 18px;color:var(--muted);font-size:13px;line-height:1.55}
+.tripGrid span{display:inline-flex;align-items:center;gap:6px;margin-top:auto;color:var(--festival-red-dark);font-size:13px;font-weight:800}
+.practical{padding-top:32px;padding-bottom:64px}
+.practicalLinks{display:grid;gap:0;border-top:1px solid var(--line)}
+.practicalLinks a{display:flex;align-items:center;justify-content:space-between;gap:14px;padding:16px 4px;border-bottom:1px solid var(--line);color:var(--forest-2);font-weight:650}
+.practicalLinks a:hover{color:var(--forest)}
+.practicalLinks a span{display:flex;align-items:center;gap:12px}
+.practicalLinks a span svg{color:var(--festival-red-dark)}
+@media(max-width:760px){.hero{min-height:530px}.heroContent{padding:58px 20px}.hero h1{font-size:clamp(37px,10vw,55px)}.hero p{font-size:15px}.heroActions{flex-direction:column;align-items:stretch}.heroActions :global(.button){justify-content:center}.infoStrip{width:calc(100% - 40px);align-items:flex-start;flex-direction:column;font-size:12px}.section{padding:36px 20px}.datePicker{grid-template-columns:repeat(5,minmax(0,1fr))}.scheduleLayout{grid-template-columns:1fr}.scheduleList,.allDays{padding:19px}.scheduleItem{grid-template-columns:72px minmax(0,1fr);gap:10px}.highlightGrid{grid-template-columns:1fr;gap:26px}.highlightImage{height:230px}.mapWrap{height:340px}.tripGrid{grid-template-columns:1fr}.tripGrid a{min-height:0}.practical{padding-bottom:42px}}
+@media(prefers-reduced-motion:reduce){.datePicker button,.tripGrid a{transition:none}}

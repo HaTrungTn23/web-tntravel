@@ -1,0 +1,145 @@
+import type { GeoPoint } from "@/domain/models";
+
+// Tọa độ cố định giúp bản đồ hoạt động không cần API key.
+// Điểm loại "center" là tâm khu vực đại diện, không mặc định là cổng vào.
+export const destinationLocations: Record<string, GeoPoint> = {
+  "tan-cuong": {
+    lat: 21.54414, lng: 105.75996,
+    label: "Đồi chè Tân Cương", address: "Tân Cương, Thái Nguyên",
+    pointType: "meeting-point", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://mapcarta.com/N5630745722",
+  },
+  "hao-dat": {
+    lat: 21.54, lng: 105.779,
+    label: "Khu vực HTX chè Hảo Đạt", address: "Xóm Nam Đồng, Tân Cương, Thái Nguyên",
+    pointType: "center", verification: "approximate", verifiedAt: "2026-10-01",
+    sourceUrl: "https://chetancuonghaodat.vn/",
+    note: "Địa chỉ đã đối chiếu; marker là vị trí xấp xỉ trong xóm Nam Đồng và cần xác nhận lại với cơ sở trước khi dẫn đường.",
+  },
+  "khong-gian-tra": {
+    lat: 21.5390351, lng: 105.7647093,
+    label: "Không gian Văn hóa Trà Tân Cương", address: "Xóm Soi Vàng, Tân Cương, Thái Nguyên",
+    pointType: "entrance", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/khong-gian-van-hoa-tra-thai-nguyen-thanh-pho-thai-nguyen/",
+  },
+  "nui-coc": {
+    lat: 21.592444, lng: 105.688167,
+    label: "Cổng Khu du lịch Hồ Núi Cốc", address: "Khu du lịch Hồ Núi Cốc, Thái Nguyên",
+    pointType: "entrance", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://scholar.dlu.edu.vn/thuvienso/bitstream/DLU123456789/279844/1/94564-1297-202213-1-10-20240425.pdf",
+  },
+  "thai-hai": {
+    lat: 21.5332727, lng: 105.8145021,
+    label: "Khu bảo tồn Làng nhà sàn dân tộc sinh thái Thái Hải", address: "Khu vực xã Tân Cương, tỉnh Thái Nguyên",
+    pointType: "entrance", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/thai-hai-reserve-area-of-ecological-houses-on-stilts-ethnic-village/",
+  },
+  "la-bang": {
+    lat: 21.6225, lng: 105.561,
+    label: "Trung tâm vùng chè La Bằng", address: "La Bằng, Thái Nguyên",
+    pointType: "center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tinhthanhvn.com/bando/thai-nguyen/xa-la-bang",
+    note: "Marker đại diện cho vùng chè; điểm đón khách cụ thể phụ thuộc cơ sở được đặt trước.",
+  },
+  "vo-tranh": {
+    lat: 21.6833, lng: 105.7627,
+    label: "Trung tâm vùng chè Vô Tranh", address: "Vô Tranh, Thái Nguyên",
+    pointType: "center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://satellites.pro/Google_plan/Vo_Tranh_map.Thai_Nguyen.Vietnam",
+    note: "Marker đại diện cho vùng chè; điểm đón khách cụ thể phụ thuộc cơ sở được đặt trước.",
+  },
+  "ghenh-che": {
+    lat: 21.5138278, lng: 105.7788694,
+    label: "Điểm du lịch cộng đồng hồ Ghềnh Chè", address: "Bình Sơn, Thái Nguyên",
+    pointType: "visitor-center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/chinh-yen-ghenh-che/",
+  },
+  "ban-ten": {
+    lat: 21.86, lng: 105.82,
+    label: "Khu vực xóm Bản Tèn", address: "Xóm Bản Tèn, Văn Lăng, Thái Nguyên",
+    pointType: "center", verification: "approximate", verifiedAt: "2026-10-01",
+    sourceUrl: "https://www.baothainguyen.vn/van-hoa/202010/phat-trien-du-lich-o-van-lang-tiem-nang-can-dau-tu-khai-thac-3676CAA/",
+    note: "Nguồn xác nhận địa danh nhưng chưa công bố tọa độ cổng hoặc điểm đón khách; không dùng marker này để dẫn đường chặng cuối.",
+  },
+  "bao-tang-dan-toc": {
+    lat: 21.5959302, lng: 105.8387473,
+    label: "Bảo tàng Văn hóa các dân tộc Việt Nam", address: "Số 1 Đội Cấn, Trưng Vương, Thái Nguyên",
+    pointType: "entrance", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/bao-tang-van-hoa-cac-dan-toc-viet-nam-trung-vuong/",
+  },
+  "dai-doi-915": {
+    lat: 21.5680264, lng: 105.8466518,
+    label: "Khu di tích lịch sử Đại đội 915", address: "Phường Gia Sàng, Thái Nguyên",
+    pointType: "entrance", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/khu-tuong-niem-thanh-nien-xung-phong-dai-doi-915/",
+  },
+  "bo-dau": {
+    lat: 21.6429084, lng: 105.7605962,
+    label: "Làng nghề bánh chưng Bờ Đậu", address: "Bờ Đậu, xã Vô Tranh, tỉnh Thái Nguyên",
+    pointType: "meeting-point", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/banh-chung-bo-dau/",
+  },
+  "lan-tin-keo": {
+    lat: 21.7878, lng: 105.5098,
+    label: "Khu vực đồi Tỉn Keo", address: "Xóm Tỉn Keo, Phú Đình, Định Hóa, Thái Nguyên",
+    pointType: "center", verification: "approximate", verifiedAt: "2026-10-01",
+    sourceUrl: "https://atkdinhhoa.hochiminh.vn/",
+    note: "Marker đại diện cụm ATK gần đèo De; chưa dùng như tọa độ chính xác của lán trên đồi.",
+  },
+  "nha-tuong-niem-atk": {
+    lat: 21.7878051, lng: 105.509767,
+    label: "Trung tâm cụm ATK Định Hóa", address: "Phú Đình, Định Hóa, Thái Nguyên",
+    pointType: "visitor-center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/an-toan-khu-atk-dinh-hoa-phu-dinh/",
+  },
+  "khuon-tat": {
+    lat: 21.7935789, lng: 105.5114803,
+    label: "Khu di tích – thác Khuôn Tát", address: "Phú Đình, Định Hóa, Thái Nguyên",
+    pointType: "meeting-point", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/thac-khuon-tat/",
+  },
+  "suoi-kem": {
+    lat: 21.6210636, lng: 105.5236863,
+    label: "Điểm tiếp cận Suối Kẹm", address: "Xóm Tân Sơn, La Bằng, Thái Nguyên",
+    pointType: "meeting-point", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/kem-la-bang/",
+  },
+  "hang-phuong-hoang": {
+    lat: 21.780556, lng: 106.099167,
+    label: "Hang Phượng Hoàng", address: "Xã Võ Nhai, tỉnh Thái Nguyên",
+    pointType: "center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://moit.gov.vn/upload/2005517/20210623/_TT37-2013-BTNMT.pdf",
+  },
+  "suoi-mo-ga": {
+    lat: 21.77498, lng: 106.11942,
+    label: "Suối Mỏ Gà", address: "Xã Võ Nhai, tỉnh Thái Nguyên",
+    pointType: "meeting-point", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://mapcarta.com/N5630671821",
+  },
+  "xom-mo-ga": {
+    lat: 21.775833, lng: 106.124167,
+    label: "Xóm Mỏ Gà", address: "Xã Võ Nhai, tỉnh Thái Nguyên",
+    pointType: "center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://moit.gov.vn/upload/2005517/20210623/_TT37-2013-BTNMT.pdf",
+  },
+  "pac-ngoi": {
+    lat: 22.38641, lng: 105.63988,
+    label: "Bản Pác Ngòi", address: "Xã Ba Bể, tỉnh Thái Nguyên",
+    pointType: "center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://mapcarta.com/fr/N2579706568",
+  },
+  "ho-ba-be": {
+    lat: 22.41089, lng: 105.6127,
+    label: "Hồ Ba Bể", address: "Vườn quốc gia Ba Bể, xã Ba Bể, tỉnh Thái Nguyên",
+    pointType: "center", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://mapcarta.com/15528810",
+    note: "Marker đại diện cho hồ; Ao Tiên là một điểm riêng trên tuyến thuyền. Trước đợt sắp xếp năm 2025, khu vực thuộc tỉnh Bắc Kạn.",
+  },
+  "den-an-ma": {
+    lat: 22.4120284, lng: 105.6154923,
+    label: "Đền An Mạ", address: "Hồ Ba Bể, xã Ba Bể, tỉnh Thái Nguyên",
+    pointType: "meeting-point", verification: "verified", verifiedAt: "2026-10-01",
+    sourceUrl: "https://tanitour.vn/den-an-ma-2/",
+    note: "Marker đặt tại Đền An Mạ; đảo Bà Góa là điểm riêng trên tuyến thuyền. Trước đợt sắp xếp năm 2025, khu vực thuộc tỉnh Bắc Kạn.",
+  },
+};

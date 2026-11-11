@@ -1,0 +1,19 @@
+.shell{position:relative}
+.controls{position:absolute;z-index:3;inset:0 -24px;pointer-events:none}
+.controls button{position:absolute;top:50%;width:48px;height:48px;display:grid;place-items:center;border:1px solid #b9d0c0;border-radius:50%;background:rgba(255,255,255,.96);color:var(--forest-2);box-shadow:0 12px 30px rgba(18,83,52,.16);pointer-events:auto;transform:translateY(-50%);transition:transform .2s ease,background .2s ease,border-color .2s ease}
+.controls button:first-child{left:0}
+.controls button:last-child{right:0}
+.controls button:hover{border-color:var(--forest);background:var(--mint);transform:translateY(-50%) scale(1.06)}
+.controls button:active{transform:translateY(-50%) scale(.96)}
+.controls svg{width:19px;height:19px}
+.track{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(285px,31%);gap:18px;overflow-x:auto;overscroll-behavior-inline:contain;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 2px 8px}
+.track::-webkit-scrollbar{display:none}
+.track>:global(.destination-card){scroll-snap-align:start;display:flex;flex-direction:column;min-width:0;border-radius:16px;box-shadow:none}
+.track :global(.card-image){height:205px}
+.track :global(.card-body){padding:20px;display:flex;flex:1;flex-direction:column}
+.track :global(.card-body h3){margin:0 0 8px;font-size:21px;line-height:1.28;text-wrap:pretty}
+.track :global(.card-body p){min-height:0;margin-bottom:20px;display:-webkit-box;overflow:hidden;text-wrap:pretty;-webkit-box-orient:vertical;-webkit-line-clamp:3}
+.track :global(.card-footer){margin-top:auto}
+@media(max-width:900px){.track{grid-auto-columns:minmax(275px,46%)}}
+@media(max-width:620px){.controls{inset:0 8px}.controls button{width:42px;height:42px}.track{grid-auto-columns:86%;gap:12px}.track :global(.card-image){height:190px}}
+@media(prefers-reduced-motion:reduce){.track{scroll-behavior:auto}}

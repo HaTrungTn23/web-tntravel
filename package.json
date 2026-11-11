@@ -1,0 +1,40 @@
+{
+  "name": "thai-nguyen-trong-tam-tay",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "@supabase/ssr": "^0.12.7",
+    "@supabase/supabase-js": "^2.117.2",
+    "@types/leaflet": "latest",
+    "leaflet": "latest",
+    "lucide-react": "latest",
+    "next": "16.4.2",
+    "react": "latest",
+    "react-dom": "latest",
+    "react-leaflet": "latest",
+    "server-only": "^0.0.1"
+  },
+  "devDependencies": {
+    "@testing-library/react": "latest",
+    "@types/node": "latest",
+    "@types/pg": "^8.23.1",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "latest",
+    "eslint-config-next": "16.4.2",
+    "jsdom": "latest",
+    "pg": "^8.23.1",
+    "typescript": "latest",
+    "vitest": "latest"
+  }
+}
