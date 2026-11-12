@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { journeyRepository } from "@/repositories";
 import { generateGroundedAnswer, isGeminiConfigured } from "@/services/chatbot/gemini";
 import { buildJourneyKnowledgeChunk } from "@/services/chatbot/knowledge";
+import { detectChatLanguage } from "@/services/chatbot/language";
 import { retrieveKnowledge } from "@/services/chatbot/retrieval";
 import { suggestJourneys } from "@/services/chatbot/journeySuggestions";
 import { CHAT_LANGUAGES, type ChatLanguage, type ChatMessage, type ChatResponse, type RetrievedChunk } from "@/services/chatbot/types";
@@ -61,9 +62,10 @@ export async function POST(request: Request) {
   catch { return NextResponse.json({ error: "Dữ liệu yêu cầu không hợp lệ." }, { status: 400 }); }
 
   const question = typeof body.question === "string" ? body.question.trim().slice(0, 1200) : "";
-  const language = CHAT_LANGUAGES.includes(body.language as ChatLanguage) ? body.language as ChatLanguage : "vi";
+  const selectedLanguage = CHAT_LANGUAGES.includes(body.language as ChatLanguage) ? body.language as ChatLanguage : "vi";
   if (question.length < 2) return NextResponse.json({ error: "Vui lòng nhập câu hỏi rõ hơn." }, { status: 400 });
 
+  const language = detectChatLanguage(question, selectedLanguage);
   const journeys = suggestJourneys(question);
   const retrieved = await retrieveKnowledge(question);
   const featured: RetrievedChunk[] = journeys.flatMap(({ id }) => {

@@ -19,4 +19,19 @@ describe("chat itinerary response", () => {
     expect(data.journeys).toHaveLength(3);
     expect(data.journeys.every((item: { href: string }) => Boolean(journeyRepository.getBySlug(item.href.split("/").at(-1) ?? "")))).toBe(true);
   });
+
+  it.each([
+    ["What tea products are available in Thai Nguyen?", "en", "chat-language-en"],
+    ["Какие чайные продукты есть в Тхайнгуене?", "ru", "chat-language-ru"],
+  ])("answers in the language of the question: %s", async (question, expectedLanguage, ip) => {
+    const response = await POST(new Request("http://localhost/api/chat", {
+      method: "POST",
+      headers: { "content-type": "application/json", "x-forwarded-for": ip },
+      body: JSON.stringify({ question, language: "vi" }),
+    }));
+    const data = await response.json();
+
+    expect(response.status).toBe(200);
+    expect(data.language).toBe(expectedLanguage);
+  });
 });

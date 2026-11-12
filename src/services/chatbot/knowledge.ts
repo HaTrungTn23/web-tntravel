@@ -6,6 +6,7 @@ import { getSupabasePublicConfig } from "@/lib/supabase/config";
 import { destinationRepository, journeyRepository, productRepository, regionRepository, stationRepository } from "@/repositories";
 import type { KnowledgeChunk } from "@/services/chatbot/types";
 import { festivalCopy, festivalPath, type FestivalSession } from "@/data/festival2026";
+import { teaBrands, type TeaBrand } from "@/data/teaBrands";
 import { getPublishedFestivalContent, type FestivalContent } from "@/services/content/festivalContent";
 
 type ManagedProfileRow = {
@@ -114,6 +115,36 @@ export function buildJourneyKnowledgeChunk(journey: Journey): KnowledgeChunk {
   };
 }
 
+const teaOccasionLabels = {
+  daily: "uống hằng ngày",
+  gift: "làm quà",
+  experience: "tham quan và trải nghiệm",
+} as const;
+
+export function buildTeaBrandKnowledgeChunk(brand: TeaBrand): KnowledgeChunk {
+  return {
+    id: `tea-brand:${brand.id}`,
+    sourceType: "product",
+    sourceId: `tea-brand:${brand.id}`,
+    title: `Sản phẩm chè Thái Nguyên: ${brand.name}`,
+    content: compact([
+      `Tên thường dùng: ${brand.shortName}.`,
+      `Vùng trà: ${brand.region}.`,
+      `Sản phẩm tiêu biểu: ${brand.featuredProduct.name}. ${brand.featuredProduct.detail}. Giá tham khảo: ${brand.featuredProduct.price}.`,
+      `Khoảng giá tham khảo của thương hiệu: ${brand.price}. Số sản phẩm ghi nhận tại thời điểm khảo sát: ${brand.productCount}.`,
+      `Thông tin chất lượng hoặc chứng nhận được ghi nhận: ${brand.certification}.`,
+      `Trạng thái chứng nhận trong dữ liệu: ${brand.hasVerifiedCert ? "đã ghi nhận nguồn tham khảo" : "chưa ghi nhận thông tin chứng nhận"}.`,
+      `Phù hợp cho: ${brand.occasions.map((occasion) => teaOccasionLabels[occasion]).join(", ")}.`,
+      brand.touristNote ? `Gợi ý cho khách tham quan: ${brand.touristNote}` : undefined,
+      `Kênh hoặc nguồn tham khảo: ${brand.website}.`,
+      "Giá, số lượng sản phẩm và chứng nhận có thể thay đổi; cần xác nhận trực tiếp với đơn vị cung cấp trước khi mua hoặc di chuyển.",
+    ]).join("\n"),
+    href: `/tea-brands#${brand.regionGroup}`,
+    language: "vi",
+    sourceNote: `Nguồn thông tin thương hiệu: ${brand.website}`,
+  };
+}
+
 export async function buildKnowledgeBase(): Promise<KnowledgeChunk[]> {
   const [managed, festival] = await Promise.all([getPublishedProfiles(), getPublishedFestivalContent()]);
   const chunks: KnowledgeChunk[] = [];
@@ -162,6 +193,10 @@ export async function buildKnowledgeBase(): Promise<KnowledgeChunk[]> {
       content: compact([product.shortDescription, `Điểm liên quan: ${product.destinationIds.map((id) => destinationRepository.getById(id)?.name).filter(Boolean).join(", ")}.`]).join("\n"),
       href: `/products/${product.slug}`, language: "vi",
     });
+  }
+
+  for (const brand of teaBrands) {
+    chunks.push(buildTeaBrandKnowledgeChunk(brand));
   }
 
   for (const region of regionRepository.getAll()) {

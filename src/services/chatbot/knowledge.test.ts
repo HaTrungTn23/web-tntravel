@@ -1,7 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { buildFestivalKnowledgeChunks, normalizeSearchText, rankKnowledgeLocally } from "./knowledge";
+import { buildFestivalKnowledgeChunks, buildTeaBrandKnowledgeChunk, normalizeSearchText, rankKnowledgeLocally } from "./knowledge";
 import type { KnowledgeChunk } from "./types";
 import { defaultFestivalContent } from "@/services/content/festivalContent";
+import { teaBrands } from "@/data/teaBrands";
 
 const chunks: KnowledgeChunk[] = [
   {
@@ -55,5 +56,23 @@ describe("chatbot local retrieval", () => {
     const festivalChunks = buildFestivalKnowledgeChunks(defaultFestivalContent());
     const results = rankKnowledgeLocally("Festival chè Thái Nguyên 2026", festivalChunks);
     expect(results[0]?.id).toBe("event:festival-tea-2026:overview");
+  });
+
+  it("indexes every tea brand with product, region, certification and source context", () => {
+    const teaChunks = teaBrands.map(buildTeaBrandKnowledgeChunk);
+
+    expect(teaChunks).toHaveLength(18);
+    expect(teaChunks.every((chunk) => chunk.sourceType === "product")).toBe(true);
+    expect(teaChunks.every((chunk) => chunk.href.startsWith("/tea-brands#"))).toBe(true);
+    expect(teaChunks.every((chunk) => chunk.content.includes("Kênh hoặc nguồn tham khảo:"))).toBe(true);
+    expect(teaChunks.every((chunk) => chunk.content.includes("cần xác nhận trực tiếp"))).toBe(true);
+  });
+
+  it("finds a tea product by brand, featured product and region", () => {
+    const teaChunks = teaBrands.map(buildTeaBrandKnowledgeChunk);
+    const results = rankKnowledgeLocally("Hồng Trà Trung Du Cổ La Bằng", teaChunks);
+
+    expect(results[0]?.id).toBe("tea-brand:labang");
+    expect(results[0]?.content).toContain("La Bằng, Đại Từ");
   });
 });
