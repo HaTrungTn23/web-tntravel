@@ -26,7 +26,7 @@ export function JourneyCard({ recommendation, rank }: { recommendation: JourneyR
   return <article className="journey-card">
     <div className="journey-card-image"><ImageWithFallback src={journey.image} alt={t("journey.imageAlt", { name: journey.name })} /><span className="rank">0{rank}</span></div>
     <div className="journey-card-body">
-      <div className="journey-meta"><span><CalendarDays /> {journey.durationLabel ?? labels.duration[journey.duration]}</span><span><MapPin /> {t("common.points", { count: journey.destinationIds.length })}</span></div>
+      <div className="journey-meta"><span><CalendarDays /> {journey.durationLabel ?? labels.duration[journey.duration]}</span>{journey.destinationIds.length ? <span><MapPin /> {t("common.points", { count: journey.destinationIds.length })}</span> : null}</div>
       <h2>{journey.code && <small>{journey.code} - </small>}{journey.name}</h2><p>{journey.summary}</p>
       <div className="reason-list"><Sparkles size={15} />{reasons.slice(0, 3).map((reason) => <span key={reason}>{reason}</span>)}</div>
       <Link className="button button-dark" href={`/journeys/${journey.slug}`}>{t("journey.view")} <ArrowRight /></Link>

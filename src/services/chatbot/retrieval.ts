@@ -66,12 +66,16 @@ async function retrieveFromVectorStore(query: string): Promise<RetrievedChunk[]>
 }
 
 export async function retrieveKnowledge(query: string) {
+  const localMatches = rankKnowledgeLocally(query, await buildKnowledgeBase(), 4);
   try {
     const vectorMatches = await retrieveFromVectorStore(query);
-    if (vectorMatches.length) return vectorMatches;
+    if (vectorMatches.length) {
+      const localIds = new Set(localMatches.map((chunk) => chunk.id));
+      return [...localMatches, ...vectorMatches.filter((chunk) => !localIds.has(chunk.id))].slice(0, 7);
+    }
   } catch (error) {
     console.warn("Vector retrieval unavailable; using local search.", error instanceof Error ? error.message : error);
   }
-  return rankKnowledgeLocally(query, await buildKnowledgeBase(), 7);
+  return localMatches;
 }
 

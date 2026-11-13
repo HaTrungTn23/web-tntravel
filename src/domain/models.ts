@@ -1,6 +1,6 @@
 export type Season = "spring" | "summer" | "autumn" | "winter";
 export type AudienceType = "solo" | "friends" | "family" | "student" | "international";
-export type InterestTag = "tea" | "culture" | "nature" | "village" | "history" | "food" | "local-product";
+export type InterestTag = "tea" | "tea-product" | "culture" | "festival" | "nature" | "village" | "history" | "food" | "local-product";
 export type DurationCode = "half-day" | "1-day" | "2-days" | "3-plus-days";
 export type DataStatus = "verified" | "source-provided" | "demo" | "incomplete";
 

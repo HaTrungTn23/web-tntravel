@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Leaf, Map, PackageOpen, Route } from "lucide-react";
+import { Leaf, PackageOpen, Route } from "lucide-react";
 import { JourneyProvider } from "@/components/journey/JourneyProvider";
 import { TravelChatbot } from "@/components/chat/TravelChatbot";
 import { LanguageProvider } from "@/components/i18n/LanguageProvider";
 import { LanguageSwitcher } from "@/components/i18n/LanguageSwitcher";
 import { AuthNav } from "@/components/auth/AuthNav";
+import { ExploreNavDropdown } from "@/components/navigation/ExploreNavDropdown";
 import { translate } from "@/i18n/messages";
 import { getServerLocale } from "@/i18n/server";
 import { getCurrentUser } from "@/services/auth/session";
@@ -38,7 +39,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
             </Link>
             <nav aria-label={t("nav.label")}>
               <Link href="/#journey-selector">{t("nav.plan")}</Link>
-              <Link href="/explore"><Map size={16} /> {t("nav.explore")}</Link>
+              <ExploreNavDropdown />
               <Link href="/tea-brands"><PackageOpen size={16} /> {t("nav.teaBrands")}</Link>
               <Link href="/my-journey"><Route size={16} /> {t("nav.mine")}</Link>
             </nav>

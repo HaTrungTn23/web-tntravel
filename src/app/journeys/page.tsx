@@ -12,7 +12,7 @@ import { getDestinationsWithPublishedMedia } from "@/services/content/destinatio
 import { applyPublishedJourneyCover } from "@/services/content/journeyContent";
 
 const allowedDurations: DurationCode[] = ["half-day", "1-day", "2-days", "3-plus-days"];
-const allowedInterests: InterestTag[] = ["tea", "culture", "nature", "village", "history", "food", "local-product"];
+const allowedInterests: InterestTag[] = ["tea", "tea-product", "culture", "festival", "nature", "village", "history", "food", "local-product"];
 const allowedAudiences: AudienceType[] = ["solo", "friends", "family", "student", "international"];
 const allowedSeasons: Season[] = ["spring", "summer", "autumn", "winter"];
 

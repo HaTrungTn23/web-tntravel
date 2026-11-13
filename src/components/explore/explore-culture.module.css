@@ -1,0 +1,81 @@
+.cultureRoot{--culture-bg:#f6f9f6;--culture-surface:#fff;--culture-tint:#e8f0ea;--culture-ink:#153c2a;--culture-muted:#586b60;--culture-line:#cad8ce;--culture-accent:#17633f;color:var(--culture-ink);background:var(--culture-bg)}.container{width:min(100% - 64px,1240px);margin-inline:auto}.foodSection,.festivalSection{padding:clamp(82px,9vw,126px) 0}.sectionHeader{max-width:730px;margin-bottom:48px}.sectionHeader h2{margin:0;font-size:clamp(42px,5.5vw,72px);line-height:.98;letter-spacing:-.045em}.sectionHeader p{max-width:620px;margin:20px 0 0;color:var(--culture-muted);font-size:16px;line-height:1.7}.foodFeature{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);gap:24px;align-items:stretch}.foodPhoto,.festivalPhoto{margin:0}.foodPhotoMedia,.festivalPhotoMedia{position:relative;overflow:hidden;border-radius:16px;background:#dbe5de}.foodPhotoMedia{min-height:510px}.foodPhoto img,.festivalPhoto img{object-fit:cover}.foodPhoto figcaption,.festivalPhoto figcaption{margin-top:10px;color:#65766b;font-size:10px;line-height:1.5}.featureCopy{padding:clamp(30px,4vw,50px);border-radius:16px;background:var(--culture-tint);display:flex;flex-direction:column;align-items:flex-start;justify-content:center}.storyMeta{display:flex;flex-wrap:wrap;gap:10px 18px;color:var(--culture-accent);font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.08em}.storyMeta span{display:inline-flex;align-items:center;gap:6px}.storyMeta svg{width:14px;height:14px;stroke-width:1.8}.featureCopy h3{margin:22px 0 16px;font-size:clamp(30px,3.2vw,48px);line-height:1.04;letter-spacing:-.03em}.featureCopy p,.foodStories p,.festivalFeature p,.festivalStories p{color:var(--culture-muted);line-height:1.7}.featureCopy p{font-size:14px}.sourceLink{display:inline-flex;align-items:center;gap:8px;margin-top:22px;color:var(--culture-accent);font-size:11px;font-weight:800;white-space:nowrap}.sourceLink svg{width:15px;height:15px}.sourceLink:hover{text-decoration:underline;text-underline-offset:4px}.sourceLink:active{transform:translateY(1px)}.foodStories{display:grid;grid-template-columns:1.35fr .825fr .825fr;gap:16px;margin-top:16px}.foodStories article{min-height:300px;padding:30px;border:1px solid var(--culture-line);border-radius:16px;background:var(--culture-surface);display:flex;flex-direction:column;align-items:flex-start}.foodStories article:first-child{background:#dfe9e2}.foodStories h3,.festivalStories h3{margin:20px 0 12px;font-size:23px;line-height:1.12}.foodStories p{margin:0;font-size:13px}.foodStories .sourceLink{margin-top:auto;padding-top:20px}.festivalSection{background:#edf3ee}.festivalPhotoMedia{aspect-ratio:2.2/1}.festivalPhoto img{object-position:center 52%}.festivalLayout{display:grid;grid-template-columns:minmax(300px,.72fr) minmax(0,1.28fr);gap:24px;margin-top:48px}.festivalFeature{min-height:560px;padding:clamp(32px,4vw,52px);border-radius:16px;background:var(--culture-ink);color:#eef6f0;display:flex;flex-direction:column;align-items:flex-start}.festivalFeature>span{font-size:10px;font-weight:750;text-transform:uppercase;letter-spacing:.1em;color:#b9d2c1}.festivalFeature>strong{margin-top:10px;color:#fff;font-size:14px}.festivalFeature h3{margin:52px 0 18px;font-size:clamp(34px,4vw,52px);line-height:1.02;letter-spacing:-.035em}.festivalFeature p{color:#c8d8ce}.featureRegion{display:flex;align-items:center;gap:8px;margin-top:auto;padding-top:30px;font-size:12px}.featureRegion svg{width:16px}.festivalFeature .sourceLink{color:#d9ebdf}.festivalStories{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.festivalStories article{min-height:272px;padding:28px;border-radius:16px;background:var(--culture-surface);display:flex;flex-direction:column;align-items:flex-start}.festivalStories article:nth-child(2),.festivalStories article:nth-child(3){background:#dfe9e2}.festivalStories article>div{display:flex;flex-direction:column;gap:6px}.festivalStories article>div span{color:var(--culture-accent);font-size:10px;font-weight:800;text-transform:uppercase;letter-spacing:.07em}.festivalStories article>div small{color:#6c7e73;font-size:10px}.festivalStories p{margin:0;font-size:12px}.festivalStories .sourceLink{margin-top:auto;padding-top:18px}@media(max-width:900px){.container{width:min(100% - 40px,1240px)}.foodFeature,.festivalLayout{grid-template-columns:1fr}.foodPhotoMedia{min-height:430px}.foodStories{grid-template-columns:1.2fr .8fr}.foodStories article:last-child{grid-column:1/-1}.festivalFeature{min-height:430px}.festivalStories{grid-template-columns:1fr 1fr}}@media(max-width:620px){.container{width:calc(100% - 38px)}.foodSection,.festivalSection{padding:76px 0}.sectionHeader{margin-bottom:34px}.sectionHeader h2{font-size:clamp(40px,12vw,54px)}.sectionHeader p{font-size:14px}.foodPhotoMedia{min-height:310px}.featureCopy{padding:28px 24px}.foodStories,.festivalStories{grid-template-columns:1fr}.foodStories article:last-child{grid-column:auto}.foodStories article,.festivalStories article{min-height:0}.festivalPhotoMedia{aspect-ratio:4/3}.festivalLayout{margin-top:34px}.festivalFeature{min-height:460px;padding:30px 24px}.festivalFeature h3{margin-top:40px}}@media(prefers-reduced-motion:no-preference){.sourceLink,.foodStories article,.festivalStories article{transition:transform .22s ease,box-shadow .22s ease}.foodStories article:hover,.festivalStories article:hover{transform:translateY(-3px);box-shadow:0 18px 38px rgba(20,66,43,.09)}}
+
+.catalog{margin-top:clamp(78px,9vw,124px);padding-top:clamp(60px,7vw,88px);border-top:1px solid var(--culture-line)}
+.catalogHeader{max-width:760px}
+.catalogHeader>span{color:var(--culture-accent);font-size:10px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.catalogHeader h3{max-width:690px;margin:16px 0 0;font-size:clamp(34px,4.7vw,58px);line-height:1;letter-spacing:-.04em}
+.catalogHeader p{max-width:650px;margin:20px 0 0;color:var(--culture-muted);font-size:15px;line-height:1.7}
+.catalogTools{display:grid;grid-template-columns:minmax(280px,.82fr) minmax(0,1.18fr);gap:18px;align-items:center;margin-top:40px}
+.catalogSearch{height:52px;padding:0 15px;border:1px solid var(--culture-line);border-radius:12px;background:var(--culture-surface);display:flex;align-items:center;gap:10px}
+.catalogSearch:focus-within{outline:2px solid var(--culture-accent);outline-offset:2px}
+.catalogSearch>svg{width:18px;height:18px;flex:0 0 auto;color:var(--culture-accent)}
+.catalogSearch input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:var(--culture-ink);font:inherit;font-size:13px}
+.catalogSearch input::placeholder{color:#718278}
+.catalogSearch button{width:32px;height:32px;padding:0;border:0;border-radius:8px;background:transparent;color:var(--culture-muted);display:grid;place-items:center;cursor:pointer}
+.catalogSearch button:hover{background:var(--culture-tint);color:var(--culture-ink)}
+.catalogSearch button svg{width:16px;height:16px}
+.catalogFilters{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}
+.catalogFilters button,.catalogMore,.catalogEmpty button{border:1px solid var(--culture-line);border-radius:999px;background:transparent;color:var(--culture-ink);font:inherit;font-size:11px;font-weight:750;cursor:pointer;white-space:nowrap}
+.catalogFilters button{min-height:40px;padding:9px 15px}
+.catalogFilters button[aria-pressed="true"]{border-color:var(--culture-accent);background:var(--culture-accent);color:#fff}
+.catalogFilters button:focus-visible,.catalogMore:focus-visible,.catalogEmpty button:focus-visible{outline:2px solid var(--culture-accent);outline-offset:3px}
+.catalogFilters button:active,.catalogMore:active,.catalogEmpty button:active{transform:translateY(1px)}
+.catalogResult{margin:28px 0 14px;color:var(--culture-muted);font-size:11px;font-weight:700}
+.catalogGrid{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:14px}
+.catalogGrid article{min-height:470px;overflow:hidden;border:1px solid var(--culture-line);border-radius:16px;background:var(--culture-surface);display:flex;flex-direction:column}
+.catalogGrid article:nth-child(4n+2),.catalogGrid article:nth-child(4n+3),.catalogCardWide{background:#e6eee8}
+.catalogCardImage{position:relative;min-height:220px;overflow:hidden;background:#dbe5de;display:block}
+.catalogCardImage img{object-fit:cover;transition:transform .5s ease}
+.catalogGrid article:hover .catalogCardImage img{transform:scale(1.025)}
+.catalogCardTop{display:flex;align-items:center;justify-content:space-between;gap:16px;margin:24px 28px 0;color:var(--culture-accent)}
+.catalogCardTop span{font-size:10px;font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.catalogCardTop small{font-size:9px;font-weight:750}
+.catalogGrid h4{max-width:550px;margin:22px 28px 13px;font-size:clamp(21px,2vw,28px);line-height:1.08;letter-spacing:-.025em}
+.catalogGrid h4 a:hover{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.catalogGrid article>p{max-width:620px;margin:0 28px;color:var(--culture-muted);font-size:12px;line-height:1.7}
+.catalogCardBottom{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-top:auto;padding:28px}
+.catalogCardBottom small{color:#718278;font-size:9px}
+.catalogCardBottom a{display:inline-flex;align-items:center;gap:7px;color:var(--culture-accent);font-size:10px;font-weight:800;text-align:right}
+.catalogCardBottom a:hover{text-decoration:underline;text-underline-offset:4px}
+.catalogCardBottom a svg{width:14px;height:14px;flex:0 0 auto}
+.catalogMore{min-height:44px;margin:26px auto 0;padding:10px 12px 10px 20px;display:flex;align-items:center;gap:12px;background:var(--culture-surface)}
+.catalogMore span{min-width:25px;height:25px;padding:0 7px;border-radius:999px;background:var(--culture-tint);display:grid;place-items:center;color:var(--culture-accent);font-size:9px}
+.catalogEmpty{padding:54px 24px;border:1px solid var(--culture-line);border-radius:16px;background:var(--culture-surface);text-align:center}
+.catalogEmpty h4{margin:0;font-size:25px}
+.catalogEmpty p{margin:12px auto 22px;color:var(--culture-muted);font-size:13px}
+.catalogEmpty button{min-height:42px;padding:9px 18px;background:var(--culture-accent);color:#fff}
+.srOnly{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+@media(max-width:900px){
+  .catalogTools{grid-template-columns:1fr}
+  .catalogFilters{justify-content:flex-start}
+}
+
+@media(max-width:620px){
+  .catalog{margin-top:76px;padding-top:58px}
+  .catalogTools{margin-top:30px}
+  .catalogFilters{flex-wrap:nowrap;overflow-x:auto;padding:2px 2px 8px;scrollbar-width:none}
+  .catalogFilters::-webkit-scrollbar{display:none}
+  .catalogGrid{grid-template-columns:1fr}
+  .catalogGrid article{min-height:0}
+  .catalogCardImage{min-height:210px}
+  .catalogCardBottom{align-items:flex-start;flex-direction:column}
+}
+
+@media(prefers-reduced-motion:no-preference){
+  .catalogGrid article,.catalogFilters button,.catalogMore{transition:transform .2s ease,box-shadow .2s ease,background-color .2s ease}
+  .catalogGrid article:hover{transform:translateY(-2px);box-shadow:0 16px 34px rgba(20,66,43,.08)}
+}
+
+.festivalFeature>.festivalGallery{margin-bottom:30px}
+.festivalStories article{min-height:470px;padding:22px}
+.festivalStories article>.festivalGallery,.festivalFeature>.festivalGallery{width:100%;display:grid;grid-template-columns:1.15fr .85fr;grid-template-rows:repeat(2,92px);gap:7px}
+.festivalGallery>div{position:relative;overflow:hidden;border-radius:10px;background:#dbe5de}
+.festivalGallery>div:first-child{grid-row:1/3}
+.festivalGallery img{object-fit:cover}
+.festivalStoryMeta{margin-top:22px}
+
+@media(max-width:620px){
+  .festivalFeature{padding:24px}
+  .festivalStories article>.festivalGallery,.festivalFeature>.festivalGallery{grid-template-rows:repeat(2,105px)}
+}

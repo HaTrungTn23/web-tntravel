@@ -8,7 +8,13 @@ const labels = { duration: "Đúng thời lượng", audience: "Phù hợp nhóm
 
 export class RuleBasedRecommendationService implements RecommendationService {
   recommend(preferences: JourneyPreferences): JourneyRecommendation[] {
-    return journeyRepository.getAll().map((journey) => {
+    const allJourneys = journeyRepository.getAll();
+    const festivalJourneys = allJourneys.filter((journey) => journey.interests.includes("festival"));
+    const candidates = preferences.interests.includes("festival") && festivalJourneys.length
+      ? festivalJourneys
+      : allJourneys;
+
+    return candidates.map((journey) => {
       let score = journey.priority;
       const matchedReasons: string[] = [];
       if (journey.duration === preferences.duration) { score += 4; matchedReasons.push(labels.duration); }

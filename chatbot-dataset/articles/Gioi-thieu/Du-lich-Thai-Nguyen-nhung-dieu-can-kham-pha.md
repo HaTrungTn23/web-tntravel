@@ -1,0 +1,24 @@
+---
+title: Du lịch Thái Nguyên - Khám phá và trải nghiệm
+url: http://thainguyentourism.vn/vi/about/Du-lich-Thai-Nguyen-nhung-dieu-can-kham-pha.html
+module: about
+category: Gioi-thieu
+flags:
+---
+Nói đến Thái Nguyên là nói đến những địa danh gắn liền với chiến tích lịch sử như Khu di tích quốc gia đặc biệt ATK Định Hóa; Khu di tích quốc gia nơi tưởng niệm 60 liệt sỹ TNXP Đại đội 915, Đội 91 Bắc Thái; Khu di tích quốc gia 27/7. Không chỉ vậy, du lịch Thái Nguyên còn hấp dẫn du khách với rất nhiều những danh thắng tuyệt đẹp và các vùng chè đặc sản qua câu truyền tụng “chè Thái, gái Tuyên”, như: Hồ Núi Cốc, hang Phượng Hoàng, suối Mỏ Gà, suối Kẹm, thác 7 tầng, du lịch cộng đồng vùng chè Tân Cương, vùng chè La Bằng... Bên cạnh đó, nhiều điểm du lịch tư nhân trên địa bàn tỉnh cũng đã phần nào đáp ứng nhu cầu vui chơi giải trí và khám phá văn hóa của du khách như: Trung tâm Thương mại và Du lịch Dũng Tân, Khu bảo tồn làng nhà sàn dân tộc sinh thái Thái Hải... Ngoài ra các khách sạn, nhà hàng ẩm thực, khu sinh thái và các siêu thị cao cấp đang ngày càng phát triển theo nét đặc trưng của tỉnh Thái Nguyên.
+
+*Nhà tưởng niệm Chủ tịch Hồ chí Minh tại ATK Định Hóa.*
+
+Trong giai đoạn vừa qua, được sự quan tâm của cấp ủy Đảng, chính quyền địa phương và cộng đồng trong việc đưa du lịch trở thành ngành kinh tế quan trọng của tỉnh, du lịch Thái Nguyên đã có những bước phát triển cả về lượng khách, doanh thu và sản phẩm du lịch.
+
+Theo báo cáo của Sở Văn hóa, Thể thao và Du lịch, trong những năm qua, hoạt động du lịch tỉnh Thái Nguyên đã có nhiều kết quả tích cực. Trong giai đoạn 5 năm trở lại đây (2015-2020), lượng khách du lịch đến Thái Nguyên không ngừng tăng, trong đó tăng trưởng về khách du lịch quốc tế đạt 6%/năm, khách du lịch nội địa tăng 15%/năm. Năm 2019 khách du lịch đến Thái Nguyên đạt 2,9 triệu lượt, trong đó có 2.824.700 lượt khách trong nước (chiếm 97,4%) và 75.300 lượt khách quốc tế (chiếm 2,6%). Thu nhập từ dịch vụ du lịch từng bước được nâng cao, tốc độ tăng trưởng giai đoạn 2013 - 2019 đạt 13,9%/năm. Từ đầu năm 2020 đến nay, do ảnh hưởng của dịch bệnh Covid-19 nên các chỉ tiêu phát triển du lịch giảm sâu so với các năm trước đó.
+
+*Một góc Hồ Núi Cốc.* *Ảnh Việt Hùng*
+
+Từ năm 2015 - 2020, tổng số cơ sở lưu trú du lịch trên địa bàn tỉnh tăng cả về số lượng và chất lượng với tốc độ tăng trưởng bình quân các năm đạt 10%. Tính đến năm 2020, trên địa bàn tỉnh có 450 cơ sở lưu trú du lịch với khoảng trên 6.200 phòng, trong đó có 50 khách sạn và 400 cơ sở đạt tiêu chuẩn kinh doanh nhà nghỉ, nhà ở có phòng cho khách du lịch thuê.
+
+Từ năm 2017 đến nay, tỉnh đã xúc tiến nhiều dự án đầu tư phát triển du lịch với nhiều nhà đầu tư khác nhau. Nhiều dự án đang được khảo sát lập quy hoạch đầu tư, như: Công ty Cổ phần Đầu tư và Phát triển Trường An nghiên cứu đầu tư sân golf, với diện tích 134 ha; Công ty Cổ phần Tập đoàn FLC khảo sát lập quy hoạch đầu tư khu đô thị mới phía Đông thành phố Thái Nguyên, dự án quần thể du lịch nghỉ dưỡng, vui chơi giải trí và đô thị phía Tây thành phố Thái Nguyên; Tập đoàn T&T Group khảo sát quy hoạch Dự án Khu du lịch sinh thái nghỉ dưỡng và vui chơi giải trí Đông Tam Đảo; Tập đoàn Flamigo với Dự án khu nghỉ dưỡng quốc tế 5 sao Hồ Núi Cốc có diện tích 44,6ha, hiện đã được công bố quy hoạch chi tiết và đang tiến hành đền bù giải phóng mặt bằng…
+
+Về cơ bản, sản phẩm du lịch của tỉnh đã dần khẳng định được thương hiệu và hình ảnh; hệ thống hạ tầng giao thông, cơ sở vật chất kỹ thuật đã được đầu tư nâng cấp, đáp ứng được nhu cầu cơ bản của du khách; thị trường du lịch được mở rộng; công tác đào tạo, bồi dưỡng nguồn nhân lực phục vụ du lịch từng bước được nâng cao. Công tác quản lý nhà nước về du lịch được quan tâm, từng bước tạo môi trường thuận lợi cho các đơn vị kinh doanh dịch vụ du lịch; khuyến khích, thu hút các nhà đầu tư phát triển du lịch. Ngành du lịch từng bước khẳng định vị trí, vai trò quan trọng trong cơ cấu kinh tế, góp phần quan trọng trong phát triển kinh tế, văn hóa, xã hội của tỉnh.
+
+Tỉnh Thái Nguyên cũng xác định mục tiêu phát triển du lịch trong thời gian tới là tổ chức thực hiện có hiệu quả Đề án phát triển du lịch tỉnh Thái Nguyên giai đoạn 2021-2025, định hướng đến 2030 đã được HĐND tỉnh thông qua vào tháng 3/2021. Phát huy thế mạnh tiềm năng vốn có và tăng cường liên kết vùng trung du, miền núi Bắc Bộ hướng tới hình thành sản phẩm du lịch đặc trưng; xây dựng sản phẩm du lịch đặc trưng của tỉnh như: Du lịch văn hóa, lịch sử về nguồn; sinh thái nghỉ dưỡng; du lịch nông nghiệp, trải nghiệm vùng chè và văn hóa trà... Cùng với đó tăng cường và đổi mới công tác xúc tiến du lịch tỉnh Thái Nguyên thông qua việc ứng dụng công nghệ thông tin và chuyển đổi số trong quảng bá du lịch... Tất cả nhằm nâng tầm và phát triển ngành Du lịch Thái Nguyên trở thành ngành kinh tế quan trọng, phấn đấu đóng góp vào tổng thu nhập GRDP của tỉnh Thái Nguyên trong giai đoạn 2021-2030 ở mức 6% GRDP của tỉnh./.

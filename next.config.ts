@@ -16,6 +16,10 @@ const nextConfig: NextConfig = {
     ...localNetworkOrigins,
   ])),
   images: {
+    localPatterns: [
+      { pathname: "/**", search: "" },
+      { pathname: "/api/culture-image/**" },
+    ],
     remotePatterns: [
       { protocol: "https", hostname: "images.unsplash.com" },
     ],

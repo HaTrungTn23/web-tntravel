@@ -3,6 +3,7 @@ import { ArrowRight, MapPin } from "lucide-react";
 import { DestinationRail } from "@/components/home/DestinationRail";
 import { HomeTracker } from "@/components/home/HomeTracker";
 import { HomeHeroSlideshow } from "@/components/home/HomeHeroSlideshow";
+import { HomeDiscoveryHighlights } from "@/components/home/HomeDiscoveryHighlights";
 import { JourneySelector } from "@/components/home/JourneySelector";
 import { StationGrid } from "@/components/home/StationGrid";
 import { MapView } from "@/components/map/MapView";
@@ -90,6 +91,8 @@ export default async function HomePage() {
         </div>
       </div>
     </section>
+
+    <HomeDiscoveryHighlights locale={locale} />
 
     <section id="journey-selector" className={`${styles.section} ${styles.planner}`}>
       <JourneySelector />

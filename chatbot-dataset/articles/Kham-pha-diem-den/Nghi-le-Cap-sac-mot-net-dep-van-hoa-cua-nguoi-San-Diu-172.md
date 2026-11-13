@@ -1,0 +1,32 @@
+---
+title: Nghi lễ Cấp sắc, một nét đẹp văn hoá của người Sán Dìu
+url: http://thainguyentourism.vn/vi/du-khach/Kham-pha-diem-den/Nghi-le-Cap-sac-mot-net-dep-van-hoa-cua-nguoi-San-Diu-172.html
+module: du-khach
+category: Kham-pha-diem-den
+flags: personal_style
+---
+Theo bà Trần Thị Nhiện, Trưởng Phòng Quản lý Di sản văn hoá (Sở Văn hoá, Thể thao và Du lịch): Ngày 30-10-2018, Nghi lễ Cấp sắc của người dân tộc Sán Dìu tỉnh Thái Nguyên được Bộ Văn hoá, Thể thao và Du lịch đưa vào danh mục Di sản văn hóa phi vật thể Quốc gia.
+
+Thái Nguyên là tỉnh có nhiều người dân tộc Sán Dìu sinh sống nhất trên cả nước, khoảng trên 47.000 người (cả nước có 146.800 người). Theo dòng chảy thời gian, với biết bao biến cố thăng trầm lịch sử, người Sán Dìu bao đời "trôi dạt" qua các triền rừng, rồi mới lập làng ở các vùng đất thuộc huyện Đồng Hỷ, Phú Lương, Phú Bình và T.X Phổ Yên… Dù cuộc sống luôn phải dời chuyển vì loạn lạc, khó khăn trăm bề, nhưng nghi lễ Cấp sắc không bị mai một, còn nguyên giá trị bản gốc.
+
+Theo ông Diệp Minh Tài, 72 tuổi, xóm Tam Thái, xã Hóa Thượng (Đồng Hỷ): Trong cộng đồng người dân tộc Sán Dìu, mọi người quan niệm, thầy cúng là người có khả năng thông linh với thế giới thần linh, tiếp xúc, thông báo, cầu xin và truyền đạt nguyện vọng của con người tới thế giới thần linh và ngược lại. Vì thế, hầu hết các gia đình, dòng họ khi có việc hiếu, việc hỷ đều mời thầy cúng đến nhà làm lễ.
+
+*Ông Trịnh Ngọc Thông, 73 tuổi, làm Thầy cúng ở xóm Na Quán, xã Nam Hòa (Đồng Hỷ).*
+
+Việc tâm linh tại gia được đồng bào thực hành thường xuyên từ xưa tới nay. Nhưng người thầy cúng - sứ giả kết nối giữa cuộc sống đời thực và thế giới thần linh phải trải qua nhiều cung bậc kham khổ, rèn luyện, kiêng kị. Từ nhỏ họ đã phải theo học chữ Hán, theo thầy cúng phụ việc, tập làm quen với các nghi lễ; thực hành nghi lễ truyền thống của dân tộc mình. Theo ông Hoàng Chí Ngọc, 78 tuổi, làm thầy cúng ở Xóm Làng Phan, xã Cổ Lũng (Phú Lương): Người có "căn" mới làm được thầy. Tuy nhiên, có căn duyên làm thầy cúng, nhưng phải "tầm sư học đạo" từ nhỏ. Khi trưởng thành phải biết đọc, biết viết chữ Hán. Và để được thế giới thần linh chấp thuận, trở thành thầy cúng thực sự, họ phải trải qua nghi lễ Cấp sắc.
+
+Theo ông Trịnh Ngọc Thông, 73 tuổi, làm thầy cúng ở xóm Na Quán, xã Nam Hòa (Đồng Hỷ): Việc cấp sắc thường trải qua 3 cấp, mỗi lần tăng cấp lại đổi pháp danh, và được cấp thêm âm binh để tăng uy lực, quyền phép… Việc cấp sắc, bắt đầu là vào sớ.
+
+Nghi lễ vào sớ là nghi lễ đánh dấu bước đầu hành nghề của người thụ lễ. Lễ vật cần 3 đến 5 con gà, hương, hoa, oản quả, rượu trắng, nước lã… một tờ điệp dương, một tờ điệp âm, một lá sớ. Các thầy làm lễ thỉnh thánh, khao quân rồi dâng sớ tấu báo lý do làm lễ, xin các thần thánh chứng nhận bảo trợ cho người thụ lễ. Lễ vào sớ có thầy cả, thầy hai và thầy ba. Thầy cả thân độ bản sư, cấp pháp cho đệ tử. Thầy hai kiểm soát toàn bộ quy trình cấp pháp, truyền phép cho người thụ lễ. Thầy ba chứng nhận cho người thụ lễ. Người thụ lễ đạt cấp Pháp sư. Pháp sư được cấp đồ nghề hành lễ (ấn pháp sư, ấn phật, lệnh bài, áo, mũ, thanh la, não bạt, tù và…). Nhưng chủ yếu tự cúng lễ trong gia đình, thực hiện các nghi thức cầu khấn, trả lễ thông thường như cúng giải hạn, cầu an, cầu phúc, trấn trạch, và theo phụ giúp thầy trong các đám, lễ chung của cộng đồng.
+
+Lần thứ hai là Cấp sắc. Nghi lễ Cấp sắc - một thủ tục bắt buộc, đánh dấu bước trưởng thành của thầy cúng, chính thức công nhận thành viên trong nghề thầy cúng của người Sán Dìu. Tại nghi lễ này, lễ vật chính có hai con lợn từ 35 kg trở lên để dâng cúng bản sư, chức sư. 36 con gà, 10 nải chuối, 15kg gạo nếp làm oản, 4kg gạo làm bánh tiêu, 20 lít rượu. Sau khi chuẩn bị đầy đủ, các thầy thực hiện các nghi thức tẩy uế, trấn yểm đàn lễ, thỉnh cầu các vị thần thánh, dâng rượu và các loại hoa quả, bánh trái, thỉnh Tam thiên pháp chủ, thần thánh, thành hoàng giáng đàn… Tiếp đến là nghi lễ chiêu binh thiên thánh, mời thiên binh vạn mã, thiên tướng, thần thánh, sư phụ về dự lễ. 37 vị thần thánh được thỉnh mời đến chứng đàn trong lễ Cấp sắc.
+
+Tiếp đến là các nghi lễ dâng sớ tấu thánh; trình lệnh bài, ấn của người thụ lễ; dâng và tấu sớ; dâng khăn hồng; nghi thức lập ngai quy; truyền tín hiệu của Thánh; cấp quân lương; tạ ơn; đại phàn… Sớ điệp của thầy truyền cho người thụ lễ gồm 24 tờ điệp, những tờ điệp âm đọc xong thì hóa ngay, tờ điệp dương đã được đóng dấu hợp đồng thì người thụ lễ giữ, đến khi qua đời đệ tử mang ra làm lễ và đốt theo.
+
+Theo ông Trần Văn Sông, 65 tuổi, làm thầy cúng ở xóm Bờ Tấc, xã Bàn Đạt (Phú Bình): Lễ cấp sắc phải có 9 ông thầy bảo hộ và giúp đỡ, gồm các thầy: Bản sư (thầy chính cấp pháp cho đệ tử); Bảo quý (thầy trông nom, bao quát toàn bộ quá trình cấp sắc); Chứng minh (thầy xem xét các văn bản, sớ điệp); Gia bổ chức sư (thầy đứng ra cấp chứng chỉ văn bằng cho đệ tử); Diễn đàn (thầy dẫn dắt và đảm bảo đầy đủ các bước của quy trình nghi lễ); Truyền phép (thầy chịu trách nhiệm truyền phép, hướng dẫn đệ tử bắt quyết, yểm bùa); Kết quy tinh đẩu, có 2 thầy (hướng dẫn đệ tử sử dụng nhạc cụ, nhảy múa, dẫn đệ tử hành hương ra khỏi phạm vi đàn lễ để thể hiện hiệu lực của phép thuật). Hoa công (thầy duy trì việc đèn hương trong suốt quá trình thực hiện nghi lễ cấp sắc).
+
+Tiếp đó là các nghi lễ: múa cờ; đại kết giới; tạo cầu tiếp thánh; hành quan tiếp sứ; dâng sớ tấu thánh; trình lệnh bài, ấn của người thụ lễ; dâng và tấu sớ; múa cờ; đón bát tiên và nghi lễ trình bản sớ hợp đồng… Tất cả các nghi lễ được diễn ra liên tục trong thời gian hai ngày, một đêm. Người thụ lễ được cấp ấn Chức sư, được khắc pháp danh lên ấn, cấp lệnh bài. Ngoài việc cầu khấn, trả lễ có thêm quyền cưỡng chế, bắt tà, trừ ma.
+
+Theo ông Nông Văn Quý, 63 tuổi, làm thầy cúng ở xóm Thanh Chử, xã Linh Sơn (T.P Thái Nguyên): Người làm thầy cúng được cấp sắc lần thứ ba sẽ đạt cấp Tổng Xuyến. Đây là cấp bậc cao nhất trong nghề thầy cúng. Người đạt tới "ngôi vị" này thường trải qua quá trình hành pháp lâu năm, có nhiều đệ tử và được cộng đồng nhân dân tôn kính… Trong cuộc sống đời thường, cả 3 chức vị: Pháp sư, Chức sư và Tổng Xuyến đều có quyền hành pháp và truyền pháp cho đệ tử cấp dưới. Người đã được cấp sắc thề nguyện chịu đựng mọi gian khổ, không ngại khó khăn, không phân biệt giàu nghèo, không dùng phép thuật hại người.
+
+Lễ cấp sắc, ngoài nghĩa tín ngưỡng, còn có giá trị giáo dục cao. Vì lễ Cấp sắc chủ yếu tập trung diễn giải về đạo đức, lễ nghĩa; giáo dục cách ứng xử giữa con người với con người; giữa con người với thiên nhiên. Nét đẹp ấy được mô tả xuyên suốt trong quá trình thực hành của nghi lễ Cấp sắc.

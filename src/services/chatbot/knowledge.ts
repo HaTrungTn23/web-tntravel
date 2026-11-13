@@ -7,6 +7,8 @@ import { destinationRepository, journeyRepository, productRepository, regionRepo
 import type { KnowledgeChunk } from "@/services/chatbot/types";
 import { festivalCopy, festivalPath, type FestivalSession } from "@/data/festival2026";
 import { teaBrands, type TeaBrand } from "@/data/teaBrands";
+import { foodArticles, splitArticleParagraphs, type FoodArticle } from "@/data/foodArticles";
+import { festivalStories, type CultureStory } from "@/data/cultureCatalog";
 import { getPublishedFestivalContent, type FestivalContent } from "@/services/content/festivalContent";
 
 type ManagedProfileRow = {
@@ -145,6 +147,41 @@ export function buildTeaBrandKnowledgeChunk(brand: TeaBrand): KnowledgeChunk {
   };
 }
 
+export function buildFoodKnowledgeChunks(article: FoodArticle): KnowledgeChunk[] {
+  return splitArticleParagraphs(article.text).map((paragraph, index) => ({
+    id: `food:${article.id}:part-${index + 1}`,
+    sourceType: "product",
+    sourceId: article.id,
+    title: `Ẩm thực Thái Nguyên: ${article.title}${index ? `, phần ${index + 1}` : ""}`,
+    content: compact([
+      `Chủ đề: ${article.sourceCategory}.`,
+      paragraph,
+      "Thông tin trải nghiệm, mùa nguyên liệu và khả năng phục vụ cần được xác nhận trước chuyến đi.",
+    ]).join("\n"),
+    href: `/explore/food/${article.id}`,
+    language: "vi",
+    sourceNote: `Nguồn tư liệu: ${article.sourceUrl}`,
+  }));
+}
+
+export function buildTraditionalFestivalKnowledgeChunk(festival: CultureStory): KnowledgeChunk {
+  return {
+    id: `traditional-festival:${festival.id}`,
+    sourceType: "event",
+    sourceId: festival.id,
+    title: `Lễ hội Thái Nguyên: ${festival.title.vi}`,
+    content: compact([
+      festival.summary.vi,
+      `Địa bàn: ${festival.region.vi}.`,
+      `Thời điểm tham khảo: ${festival.season.vi}.`,
+      "Lịch tổ chức có thể thay đổi theo năm và lịch âm. Du khách cần xác nhận với địa phương trước chuyến đi.",
+    ]).join("\n"),
+    href: "/festivals",
+    language: "vi",
+    sourceNote: `Nguồn tư liệu: ${festival.sourceUrl}`,
+  };
+}
+
 export async function buildKnowledgeBase(): Promise<KnowledgeChunk[]> {
   const [managed, festival] = await Promise.all([getPublishedProfiles(), getPublishedFestivalContent()]);
   const chunks: KnowledgeChunk[] = [];
@@ -197,6 +234,14 @@ export async function buildKnowledgeBase(): Promise<KnowledgeChunk[]> {
 
   for (const brand of teaBrands) {
     chunks.push(buildTeaBrandKnowledgeChunk(brand));
+  }
+
+  for (const article of foodArticles) {
+    chunks.push(...buildFoodKnowledgeChunks(article));
+  }
+
+  for (const festival of festivalStories) {
+    chunks.push(buildTraditionalFestivalKnowledgeChunk(festival));
   }
 
   for (const region of regionRepository.getAll()) {

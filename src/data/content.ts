@@ -119,7 +119,7 @@ export const languageContents: LanguageContent[] = [
 export const journeys: Journey[] = [
   {
     id: "tea-lake", slug: "huong-tra-va-ho-xanh", name: "Hương trà và hồ xanh", summary: "Kết nối không gian trà Tân Cương với điểm cảnh quan xanh trong hành trình hai ngày.",
-    duration: "2-days", interests: ["tea", "nature", "culture"], audiences: ["family", "friends", "international"], seasons: ["spring", "summer", "autumn"],
+    duration: "2-days", interests: ["tea", "tea-product", "nature", "culture"], audiences: ["family", "friends", "international"], seasons: ["spring", "summer", "autumn"],
     days: [{ day: 1, items: [{ destinationId: "tan-cuong", startTime: "08:30", isDemoSchedule: true }, { destinationId: "hao-dat", startTime: "14:00", isDemoSchedule: true }] }, { day: 2, items: [{ destinationId: "nui-coc", startTime: "09:00", isDemoSchedule: true }] }],
     destinationIds: ["tan-cuong", "hao-dat", "nui-coc"], image: "https://images.unsplash.com/photo-1563911892437-1feda0179e1b?auto=format&fit=crop&w=1600&q=85", priority: 1, dataStatus: "demo",
   },

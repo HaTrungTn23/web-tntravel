@@ -24,6 +24,9 @@ describe("JourneySelector", () => {
     expect((screen.getByLabelText("Trà") as HTMLInputElement).checked).toBe(false);
     expect((screen.getByLabelText("Thiên nhiên") as HTMLInputElement).checked).toBe(false);
     expect((screen.getByLabelText("Văn hóa") as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText("Ẩm thực") as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText("Lễ hội") as HTMLInputElement).checked).toBe(false);
+    expect((screen.getByLabelText("Sản phẩm chè") as HTMLInputElement).checked).toBe(false);
   });
 
   it("updates preferences and navigates to matching results", () => {

@@ -78,7 +78,9 @@ const vi = {
   "duration.2-days": "2 ngày",
   "duration.3-plus-days": "3+ ngày",
   "interest.tea": "Trà",
+  "interest.tea-product": "Sản phẩm chè",
   "interest.culture": "Văn hóa",
+  "interest.festival": "Lễ hội",
   "interest.nature": "Thiên nhiên",
   "interest.village": "Bản làng",
   "interest.history": "Lịch sử",
@@ -258,7 +260,7 @@ const en: Record<MessageKey, string> = {
   
   "selector.kicker": "Design your trip", "selector.title": "Which journey suits you?", "selector.duration": "How much time do you have?", "selector.interests": "What interests you?", "selector.audience": "Who are you traveling with?", "selector.season": "Preferred season", "selector.submit": "View suggestions", "selector.error.duration": "Choose a duration for your journey.", "selector.error.interests": "Choose at least one interest.",
   "duration.half-day": "Half day", "duration.1-day": "1 day", "duration.2-days": "2 days", "duration.3-plus-days": "3+ days",
-  "interest.tea": "Tea", "interest.culture": "Culture", "interest.nature": "Nature", "interest.village": "Villages", "interest.history": "History", "interest.food": "Food", "interest.local-product": "Local products",
+  "interest.tea": "Tea", "interest.tea-product": "Tea products", "interest.culture": "Culture", "interest.festival": "Festivals", "interest.nature": "Nature", "interest.village": "Villages", "interest.history": "History", "interest.food": "Food", "interest.local-product": "Local products",
   "audience.solo": "Solo", "audience.friends": "Friends", "audience.family": "Family", "audience.student": "Students", "audience.international": "International visitors",
   "season.spring": "Spring", "season.summer": "Summer", "season.autumn": "Autumn", "season.winter": "Winter", "station.explore": "Explore",
   "explore.kicker": "Discovery map", "explore.titleA": "Go anywhere.", "explore.titleB": "Follow the story.", "explore.body": "Filter destinations from one data set, open their profiles or add them to your own journey.", "explore.search": "Search destinations...", "explore.filter.all": "All", "explore.filter.tea": "Tea and culture", "explore.filter.village": "Villages and products", "explore.filter.nature": "Green nature", "explore.filter.history": "History", "explore.visible": "{count} places shown", "explore.empty.title": "No matching places", "explore.empty.body": "Try another keyword or filter.",
@@ -290,7 +292,7 @@ const ru: Record<MessageKey, string> = {
   
   "selector.kicker": "Создайте поездку", "selector.title": "Какой маршрут вам подходит?", "selector.duration": "Сколько у вас времени?", "selector.interests": "Что вам интересно?", "selector.audience": "С кем вы путешествуете?", "selector.season": "Предпочтительный сезон", "selector.submit": "Показать маршруты", "selector.error.duration": "Выберите продолжительность поездки.", "selector.error.interests": "Выберите хотя бы один интерес.",
   "duration.half-day": "Полдня", "duration.1-day": "1 день", "duration.2-days": "2 дня", "duration.3-plus-days": "3+ дня",
-  "interest.tea": "Чай", "interest.culture": "Культура", "interest.nature": "Природа", "interest.village": "Деревни", "interest.history": "История", "interest.food": "Кухня", "interest.local-product": "Местные продукты",
+  "interest.tea": "Чай", "interest.tea-product": "Чайные продукты", "interest.culture": "Культура", "interest.festival": "Праздники", "interest.nature": "Природа", "interest.village": "Деревни", "interest.history": "История", "interest.food": "Кухня", "interest.local-product": "Местные продукты",
   "audience.solo": "Один", "audience.friends": "С друзьями", "audience.family": "Семья", "audience.student": "Учащиеся", "audience.international": "Иностранные гости",
   "season.spring": "Весна", "season.summer": "Лето", "season.autumn": "Осень", "season.winter": "Зима", "station.explore": "Исследовать",
   "explore.kicker": "Карта путешествий", "explore.titleA": "Отправляйтесь куда угодно.", "explore.titleB": "Следуйте за историей.", "explore.body": "Фильтруйте места, открывайте подробные карточки и добавляйте их в свой маршрут.", "explore.search": "Найти место...", "explore.filter.all": "Все", "explore.filter.tea": "Чай и культура", "explore.filter.village": "Деревни и продукты", "explore.filter.nature": "Зелёная природа", "explore.filter.history": "История", "explore.visible": "Показано мест: {count}", "explore.empty.title": "Ничего не найдено", "explore.empty.body": "Попробуйте другой запрос или фильтр.",

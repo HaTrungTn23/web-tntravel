@@ -5,7 +5,9 @@ import type { ChatJourneySuggestion } from "./types";
 
 const interestTerms: Record<InterestTag, string[]> = {
   tea: ["tra", "che", "tea", "чай", "茶", "お茶", "차"],
+  "tea-product": ["san pham che", "san pham tra", "mua che", "mua tra", "tea product", "buy tea", "tea gift", "чайные продукт", "купить чай", "茶产品", "茶製品", "차 제품"],
   culture: ["van hoa", "culture", "культур", "文化", "문화"],
+  festival: ["le hoi", "hoi lang", "festival", "festivals", "праздник", "фестиваль", "节日", "祭り", "축제"],
   nature: ["thien nhien", "ho", "suoi", "nui", "nature", "lake", "waterfall", "природ", "озер", "водопад", "自然", "자연"],
   village: ["ban lang", "lang", "village", "деревн", "дерев", "村", "마을"],
   history: ["lich su", "di tich", "history", "historic", "истор", "历史", "歴史", "역사"],

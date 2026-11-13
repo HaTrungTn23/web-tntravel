@@ -1,0 +1,60 @@
+.discovery{width:min(1280px,100%);margin:0 auto;padding:86px 32px 28px}
+.discoveryIntro{display:grid;grid-template-columns:minmax(180px,.55fr) minmax(0,1.45fr);gap:46px;align-items:start;padding-bottom:82px;border-bottom:1px solid var(--line)}
+.introLabel{margin:11px 0 0;color:var(--forest);font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase}
+.discoveryIntro>div{max-width:850px}
+.discoveryIntro h2,.sectionHeading h2,.festivalHeading h2{margin:0;color:var(--forest-2);font-size:clamp(35px,4.4vw,58px);line-height:1.04;letter-spacing:-.045em;text-wrap:balance}
+.discoveryIntro>div>p,.sectionHeading>div>p,.festivalHeading>p{max-width:700px;margin:17px 0 0;color:var(--muted);font-size:15px;line-height:1.75;text-wrap:pretty}
+.foodSection,.teaSection{padding:86px 0}
+.sectionHeading{display:flex;align-items:end;justify-content:space-between;gap:40px;margin-bottom:34px}
+.sectionHeading>div{max-width:780px}
+.sectionLink,.festivalLink{display:inline-flex;align-items:center;gap:9px;flex:0 0 auto;color:var(--forest);font-size:12px;font-weight:800}
+.sectionLink svg,.festivalLink svg{width:17px;height:17px;transition:transform .2s ease}
+.sectionLink:hover svg,.festivalLink:hover svg{transform:translateX(4px)}
+.sectionLink:focus-visible,.festivalLink:focus-visible,.foodMosaic a:focus-visible,.teaCard:focus-visible{outline:3px solid #86bd98;outline-offset:4px}
+.foodMosaic{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(270px,.8fr);grid-template-rows:repeat(2,220px);gap:16px}
+.foodLead,.foodCard{position:relative;min-width:0;overflow:hidden;border-radius:18px;background:var(--forest-2);color:#fff}
+.foodLead{grid-row:1/3}
+.foodLead>img,.foodCard>img{transition:transform .55s cubic-bezier(.16,1,.3,1)}
+.foodLead:hover>img,.foodCard:hover>img{transform:scale(1.045)}
+.mediaShade{position:absolute;inset:0;background:linear-gradient(180deg,transparent 30%,rgba(4,28,17,.88) 100%)}
+.foodCopy{position:absolute;z-index:1;right:0;bottom:0;left:0;display:flex;flex-direction:column;align-items:flex-start;padding:27px}
+.foodCopy small{display:flex;align-items:center;gap:6px;margin-bottom:7px;color:#d9eadf;font-size:10px;font-weight:700;letter-spacing:.04em}
+.foodCopy small svg{width:14px;height:14px}
+.foodCopy strong{font-size:clamp(20px,2.2vw,31px);line-height:1.12;text-wrap:balance}
+.foodCopy>span{max-width:670px;margin-top:10px;color:#edf5ef;font-size:13px;line-height:1.55}
+.foodCard .foodCopy{padding:21px}
+.foodCard .foodCopy strong{font-size:20px}
+.festivalSection{display:grid;grid-template-columns:minmax(0,.85fr) minmax(420px,1.15fr);min-height:540px;margin:0;overflow:hidden;border-radius:18px;background:#102d25;color:#fff}
+.festivalVisual{position:relative;min-height:540px;overflow:hidden}
+.festivalVisual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 55%,rgba(16,45,37,.3)),linear-gradient(0deg,rgba(6,30,22,.55),transparent 45%)}
+.festivalCaption{position:absolute;z-index:1;bottom:29px;left:max(28px,calc((100vw - 1280px)/2 + 32px));padding:8px 11px;border:1px solid rgba(255,255,255,.32);border-radius:999px;background:rgba(8,39,29,.56);font-size:10px;font-weight:700;backdrop-filter:blur(7px)}
+.festivalContent{display:flex;flex-direction:column;justify-content:center;padding:50px 48px}
+.festivalHeading h2{color:#fff}
+.festivalHeading>p{color:#bfd2c6}
+.festivalList{margin:38px 0 30px;padding:0;list-style:none;border-top:1px solid rgba(255,255,255,.16)}
+.festivalList li{display:grid;grid-template-columns:38px minmax(0,1fr);gap:18px;padding:18px 0;border-bottom:1px solid rgba(255,255,255,.16)}
+.festivalList li>span{padding-top:2px;color:#8fba9c;font-size:10px;font-weight:800;letter-spacing:.12em}
+.festivalList li>div{display:grid;gap:6px}
+.festivalList strong{font-size:16px;line-height:1.3}
+.festivalList small{display:flex;align-items:flex-start;gap:7px;color:#b8cdc0;font-size:11px;line-height:1.45}
+.festivalList small svg{width:14px;height:14px;flex:0 0 auto}
+.festivalLink{align-self:flex-start;color:#d9efdf}
+.teaSection{padding-bottom:72px}
+.teaShelf{display:grid;grid-template-columns:1.25fr repeat(3,1fr);gap:15px}
+.teaCard{min-width:0;overflow:hidden;border:1px solid var(--line);border-radius:17px;background:#fff;box-shadow:0 11px 34px rgba(18,83,52,.07)}
+.teaCard:hover{border-color:#91b79e;box-shadow:0 17px 40px rgba(18,83,52,.13);transform:translateY(-4px)}
+.teaImage{position:relative;display:block;height:245px;overflow:hidden;background:var(--mint)}
+.teaImage>img{transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.teaCard:hover .teaImage>img{transform:scale(1.04)}
+.teaImage>small{position:absolute;right:11px;bottom:11px;left:11px;display:flex;align-items:center;gap:6px;width:max-content;max-width:calc(100% - 22px);padding:7px 9px;border-radius:8px;background:rgba(7,45,27,.86);color:#fff;font-size:9px;font-weight:750;backdrop-filter:blur(6px)}
+.teaImage>small svg{width:13px;height:13px;flex:0 0 auto}
+.teaCopy{display:flex;min-height:136px;flex-direction:column;padding:20px}
+.teaCopy>small{margin-bottom:7px;color:var(--forest);font-size:10px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.teaCopy>strong{color:var(--forest-2);font-size:18px;line-height:1.2}
+.teaCopy>span{margin-top:11px;color:var(--muted);font-size:11px;line-height:1.55}
+@media(max-width:1280px){.festivalCaption{left:32px}}
+@media(max-width:980px){.teaShelf{grid-template-columns:repeat(2,minmax(0,1fr))}.festivalSection{grid-template-columns:minmax(0,.9fr) minmax(380px,1.1fr)}.festivalContent{padding-left:38px}}
+@media(min-width:1100px){.festivalHeading h2{font-size:clamp(34px,3vw,44px);white-space:nowrap}}
+@media(max-width:760px){.discovery{padding:62px 19px 20px}.discoveryIntro{grid-template-columns:1fr;gap:18px;padding-bottom:58px}.introLabel{margin:0}.foodSection,.teaSection{padding:60px 0}.sectionHeading{align-items:flex-start;flex-direction:column;gap:20px;margin-bottom:27px}.foodMosaic{grid-template-columns:1fr;grid-template-rows:350px repeat(2,190px)}.foodLead{grid-row:auto}.foodCopy{padding:22px}.festivalSection{grid-template-columns:1fr;min-height:0}.festivalVisual{min-height:330px}.festivalCaption{left:19px}.festivalContent{padding:40px 19px 44px}.festivalList{margin-top:29px}.teaShelf{display:flex;gap:13px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:4px 1px 13px}.teaShelf::-webkit-scrollbar{display:none}.teaCard{width:78vw;flex:0 0 78vw;scroll-snap-align:start}.teaImage{height:235px}}
+@media(max-width:420px){.foodMosaic{grid-template-rows:320px repeat(2,180px)}.foodCopy>span{display:none}.teaCard{width:84vw;flex-basis:84vw}}
+@media(prefers-reduced-motion:reduce){.foodLead>img,.foodCard>img,.teaImage>img,.sectionLink svg,.festivalLink svg{transition:none}.teaCard:hover{transform:none}}

@@ -1,0 +1,232 @@
+.wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 0;
+  padding: 6px 12px;
+  border-radius: 999px;
+  color: inherit;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.trigger:hover {
+  color: var(--clay, #b45309);
+  background: rgba(23, 99, 63, 0.06);
+}
+
+.activeNav {
+  color: var(--forest, #17633f);
+  font-weight: 700;
+}
+
+.chevron {
+  transition: transform 0.2s ease;
+}
+
+.chevronOpen {
+  transform: rotate(180deg);
+}
+
+/* Dropdown Window: Refined typography & balanced layout */
+.menu {
+  position: absolute;
+  top: calc(100% + 12px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(650px, calc(100vw - 32px));
+  padding: 16px;
+  border: 1px solid #bdd0c2;
+  border-radius: 18px;
+  background: #ffffff;
+  color: var(--forest-2, #143b2a);
+  box-shadow: 0 24px 60px rgba(18, 68, 41, 0.18);
+  display: grid;
+  grid-template-columns: 1.15fr 0.95fr;
+  gap: 16px;
+  z-index: 1000;
+  animation: dropdownIn 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes dropdownIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -6px);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.listHeading {
+  display: block;
+  margin: 4px 10px 10px;
+  color: #697d71;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.item {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 14px;
+  background: transparent;
+  display: grid;
+  grid-template-columns: 38px 1fr;
+  align-items: center;
+  gap: 14px;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.item:hover,
+.itemActive {
+  background: #edf5ef;
+}
+
+.itemIconWrap {
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: #ddede2;
+  color: var(--forest, #17633f);
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+}
+
+.itemText {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.itemText b {
+  font-size: 15px;
+  font-weight: 750;
+  line-height: 1.25;
+  color: var(--forest-2, #143b2a);
+}
+
+.itemText em {
+  margin-top: 4px;
+  color: #55675c;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 1.4;
+}
+
+/* Preview Column */
+.preview {
+  position: relative;
+  min-height: 240px;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #153c2a;
+}
+
+.previewImg {
+  object-fit: cover;
+  opacity: 0.78;
+  transition: transform 0.35s ease;
+}
+
+.preview:hover .previewImg {
+  transform: scale(1.04);
+}
+
+.preview::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(7, 26, 17, 0.95) 0%, rgba(7, 26, 17, 0.25) 55%, transparent 100%);
+}
+
+.previewOverlay {
+  position: absolute;
+  z-index: 2;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.previewOverlay small {
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  color: #a3d8b5;
+  text-transform: uppercase;
+}
+
+.previewOverlay b {
+  margin: 6px 0 14px;
+  font-size: 22px;
+  font-weight: 750;
+  line-height: 1.15;
+}
+
+.previewBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 9px 16px;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #153c2a;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.16);
+  transition: background-color 0.15s ease, transform 0.15s ease;
+}
+
+.previewBtn:hover {
+  background: #f0f7f2;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 720px) {
+  .menu {
+    grid-template-columns: 1fr;
+    width: calc(100vw - 24px);
+    left: auto;
+    right: -70px;
+    transform: none;
+  }
+  @keyframes dropdownIn {
+    from {
+      opacity: 0;
+      transform: translateY(-6px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  .preview {
+    display: none;
+  }
+}

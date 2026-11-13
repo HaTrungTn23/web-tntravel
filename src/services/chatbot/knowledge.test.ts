@@ -1,8 +1,10 @@
 import { describe, expect, it } from "vitest";
-import { buildFestivalKnowledgeChunks, buildTeaBrandKnowledgeChunk, normalizeSearchText, rankKnowledgeLocally } from "./knowledge";
+import { buildFestivalKnowledgeChunks, buildFoodKnowledgeChunks, buildTeaBrandKnowledgeChunk, buildTraditionalFestivalKnowledgeChunk, normalizeSearchText, rankKnowledgeLocally } from "./knowledge";
 import type { KnowledgeChunk } from "./types";
 import { defaultFestivalContent } from "@/services/content/festivalContent";
 import { teaBrands } from "@/data/teaBrands";
+import { foodArticles } from "@/data/foodArticles";
+import { festivalStories } from "@/data/cultureCatalog";
 
 const chunks: KnowledgeChunk[] = [
   {
@@ -74,5 +76,22 @@ describe("chatbot local retrieval", () => {
 
     expect(results[0]?.id).toBe("tea-brand:labang");
     expect(results[0]?.content).toContain("La Bằng, Đại Từ");
+  });
+
+  it("indexes every food article as one or more searchable knowledge chunks", () => {
+    const foodChunks = foodArticles.flatMap(buildFoodKnowledgeChunks);
+
+    expect(foodChunks.length).toBeGreaterThanOrEqual(34);
+    expect(new Set(foodChunks.map((chunk) => chunk.sourceId)).size).toBe(34);
+    expect(foodChunks.every((chunk) => chunk.href.startsWith("/explore/food/"))).toBe(true);
+    expect(rankKnowledgeLocally("Bánh ngải người Tày", foodChunks)[0]?.sourceId).toBe("tn-002");
+  });
+
+  it("indexes all traditional festivals with timing and source context", () => {
+    const traditionalFestivalChunks = festivalStories.map(buildTraditionalFestivalKnowledgeChunk);
+
+    expect(traditionalFestivalChunks).toHaveLength(5);
+    expect(traditionalFestivalChunks.every((chunk) => chunk.content.includes("Thời điểm tham khảo:"))).toBe(true);
+    expect(rankKnowledgeLocally("Lễ hội Cầu Muối", traditionalFestivalChunks)[0]?.sourceId).toBe("cau-muoi");
   });
 });
